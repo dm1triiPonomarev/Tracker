@@ -41,7 +41,7 @@ body{
 .nav-link:first-child{
 	opacity: 1;
 	/* text-decoration:underline; */
-	border-bottom: 1px solid #cfd9df;
+	border-bottom: 2px solid #cfd9df;
 }
 .nav-link:hover{
 	opacity: 1;
