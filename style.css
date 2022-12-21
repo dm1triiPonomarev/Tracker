@@ -11,7 +11,7 @@ body{
 
 
   height: 100vh;
-	/* display: flex; */
+
 
 	justify-content: center;
 	
@@ -26,9 +26,7 @@ body{
 	margin: 0 auto	;
 	text-transform: uppercase;
 }
-.container{
-	/* max-width: 500px; */
-}
+
 .nav-link{
 	font-size: 13px;
 	font-family: 'Raleway', sans-serif;
@@ -40,8 +38,7 @@ body{
 }
 .nav-link:first-child{
 	opacity: 1;
-	/* text-decoration:underline; */
-	border-bottom: 2px solid #cfd9df;
+	border-bottom: 1px solid #cfd9df;
 }
 .nav-link:hover{
 	opacity: 1;
@@ -64,7 +61,6 @@ body{
 .name{
 	text-transform: uppercase;
 	font-weight: 600;
-	/* font-family: 'Raleway', sans-serif; */
 	font-family: 'Unbounded', cursive;
 	text-align: center;
 	margin-top: 100px;
@@ -106,14 +102,9 @@ body{
 }
 .bnt-js-plus{
 	
-		
 	color: #000;
 	margin-right: 150px;
 	border-radius: 50%;
-	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-
-	background-color: darkgreen;
-	
 	background-color: #cfd9df;
 	border: none;
 	width: 20vh;
@@ -126,10 +117,8 @@ body{
 	width: 4em;
 }
 
-.bnt-js-minus{
-	/* background-color: darkred; */
+.bnt-js-cancel{
 	
-	opacity: 1;
 	border: none;
 	border-radius: 50%;
 	width: 20vh;
@@ -138,27 +127,14 @@ body{
 	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
-.minus-img{
+.cancel-img{
 	width: 4em;
 }
 
 
-.bnt-js-plus:hover{
-	/* background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); */
-	/* background-color: chartreuse; */
-	/* opacity: 1; */
-	/* background-color: chartreuse; */
-}
 
-/* 
-.bnt-js-minus:hover{
-	opacity: 1;
-background-color: firebrick;
-} */
 
-.footer{
-	
-}
+
 .createby{
 	margin-top: 90px;
 	justify-content: center;
@@ -181,7 +157,7 @@ background-color: firebrick;
 		
 		font-size: 36px;
 	}
-	.minus-img{
+	.cancel-img{
 		width: 3em;
 	}
 	.plus-img{
@@ -191,7 +167,7 @@ background-color: firebrick;
 		margin-right: 74px;
 	}
 	.bnt-js-plus,
-	.bnt-js-minus{
+	.bnt-js-cancel{
 		
 		width: 20vh;
 		height: 20vh;
@@ -219,7 +195,7 @@ background-color: firebrick;
 		margin-right: 50px;
 	}
 	.bnt-js-plus,
-	.bnt-js-minus{
+	.bnt-js-cancel{
 		
 		width: 19vh;
 		height: 19vh;

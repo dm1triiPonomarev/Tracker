@@ -3,7 +3,7 @@
 let name = document.querySelector('.name')
 let num = document.querySelector('.number-js')
 let plusBtn = document.querySelector('.bnt-js-plus');
-let minusBtn = document.querySelector('.bnt-js-minus');
+let cancelBtn = document.querySelector('.bnt-js-cancel');
 let firstName = document.querySelector('.first_name');
 let secondName = document.querySelector('.second_name');
 
@@ -24,13 +24,14 @@ let day = new Date();
 
 
 
+
 function changeBackground(color) {
 	 plusBtn.style.background = color;
 
 }
 
 function changeBackground2(color2) {
-	minusBtn.style.background = color2;
+	cancelBtn.style.background = color2;
 
 }
 
@@ -54,7 +55,8 @@ plusBtn.addEventListener('click',function(){
 	counter +=1
 	num.textContent = counter;
 
-	plusBtn.style.opacity = 1;
+	
+	//bcg change
 	setTimeout(one,650);
 	setTimeout(changeBackground('chartreuse'),3000)
 
@@ -64,8 +66,7 @@ plusBtn.addEventListener('click',function(){
 
 
 
-minusBtn.addEventListener('click',function(){
-
+cancelBtn.addEventListener('click',function(){
 
 	//counter
 	counter = 0
@@ -75,46 +76,32 @@ minusBtn.addEventListener('click',function(){
 	setTimeout(two,650);
 	setTimeout(changeBackground2('firebrick'),3000)
 
-	//
-	
-	// if(name.textContent ==  null){
-	// 	name.textContent = del[0]
-	// }else{}
-	
-	
-
 })
 
+//Изменение названия 
 function nameToDate(arr){
 	firstName.textContent = `${arr[nameDelete]}`
 	secondName.textContent = `(${nameDelete + 1} / ${arr.length })`
-	// name.textContent = `${arr[nameDelete]} (${nameDelete + 1} / ${arr.length })`;
+	
 
-	minusBtn.addEventListener('click',function(){
+	cancelBtn.addEventListener('click',function(){
 		nameDelete += 1 ;
 		if(nameDelete == arr.length ){
 			nameDelete = 0
 		}
 		firstName.textContent = `${arr[nameDelete]} `
 		secondName.textContent = `(${nameDelete + 1} / ${arr.length })`
-		// name.textContent = `${arr[nameDelete]} 
-		//  (${nameDelete + 1} / ${arr.length })`;
 	})
 }
 
+
+// Зависимость от дня недели
 if(day.getDay() == 1){
 	nameToDate(Monday)
-}
-
-if(day.getDay() == 3){
+}else if(day.getDay() == 3){
 	nameToDate(Wednesday)
-}
-
-
-if(day.getDay() == 5){
+}else if(day.getDay() == 5){
 	nameToDate(Friday)
-}
-
-if(day.getDay() == 0,2,4,6){
-	nameToDate(Wednesday)
+}else{
+		nameToDate(Wednesday)
 }
