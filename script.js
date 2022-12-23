@@ -103,5 +103,5 @@ if(day.getDay() == 1){
 }else if(day.getDay() == 5){
 	nameToDate(Friday)
 }else{
-	nameToDate(Wednesday)
+	nameToDate(Friday)
 }
