@@ -27,7 +27,7 @@ plusBtn.addEventListener('click', function () {
 	//bcg change
 
 	setTimeout(changeBackgroundPlus, 0);
-	setTimeout(changeBackgroundPlus, 500);
+	setTimeout(changeBackgroundPlus, 250);
 
 
 })
@@ -40,7 +40,7 @@ cancelBtn.addEventListener('click', function () {
 
 	//bcg change
 	setTimeout(changeBackgroundCancel, 0);
-	setTimeout(changeBackgroundCancel, 500)
+	setTimeout(changeBackgroundCancel, 250)
 
 })
 
