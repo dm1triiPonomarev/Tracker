@@ -25,7 +25,7 @@ function switchColor(node) {
 	const nextColor = NEXT_COLORS[currentColor];	//PLUS_COLORS.green
 	const nextClass = CLASSES_BY_PLUS_COLORS[nextColor]	//'btn-js-plus_clicked'
 
-	node.classList.replace(currentClass, nextClass)//	'btn-js-default' => 'btn-js-plus_clicked'
+	node.classList.replace(currentClass, nextClass)	//'btn-js-default' => 'btn-js-plus_clicked'
 
 	currentColor = nextColor
 
@@ -69,7 +69,7 @@ function switchColor2(node) {
 	const nextColor = NEXT_CANCEL_COLORS[currentCancelColor];	//CANCEL_COLORS.red
 	const nextClass = CLASSES_BY_CANCEL_COLORS[nextColor]	//'btn-js-cancel_clicked'
 
-	node.classList.replace(currentClass, nextClass)//	'btn-js-default' => 'btn-js-cancel_clicked'
+	node.classList.replace(currentClass, nextClass)	//'btn-js-default' => 'btn-js-cancel_clicked'
 
 	currentCancelColor = nextColor
 
