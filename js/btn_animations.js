@@ -4,7 +4,7 @@
 //======================================
 const PLUS_COLORS = {
 	default: 'default',
-	green: 'green'
+	green: 'green',
 }
 
 const CLASSES_BY_PLUS_COLORS = {
@@ -32,8 +32,6 @@ function switchColor(node) {
 }
 
 
-
-
 function changeBackgroundPlus() {
 	switchColor(plusBtn);
 
@@ -42,8 +40,6 @@ function changeBackgroundPlus() {
 
 //CANCEL
 //============================================
-
-
 
 
 const CANCEL_COLORS = {
