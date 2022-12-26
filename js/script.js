@@ -7,16 +7,15 @@ let cancelBtn = document.querySelector('.bnt-js-cancel');
 let firstName = document.querySelector('.first_name');
 let secondName = document.querySelector('.second_name');
 
-
+let counter = 0;
+let nameDelete = 0;
 
 
 let Monday = ['Жим гантелей лежа', 'жим лежа на наклонной скамье', 'отжимание от брусьев', 'французский жим штанги лежа'];
 let Wednesday = ['Подтягивание на турнике', 'тяга горизонтального блока к поясу сидя', 'тяги гантели одной рукой в наклоне', 'сгибание рук со штангой стоя']
-
 let Friday = ['жим ногами', 'разгибание ног', 'сгибание ног', 'армейский жим штанги стоя', 'подъем гантелей через стороны']
 
-let counter = 0;
-let nameDelete = 0;
+
 
 
 plusBtn.addEventListener('click', function () {
