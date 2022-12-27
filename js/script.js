@@ -1,19 +1,23 @@
 'use strict';
 
 let name = document.querySelector('.name')
-let num = document.querySelector('.number-js')
+let number = document.querySelector('.number-js')
 let plusBtn = document.querySelector('.bnt-js-plus');
 let cancelBtn = document.querySelector('.bnt-js-cancel');
 let firstName = document.querySelector('.first_name');
 let secondName = document.querySelector('.second_name');
 
+
+let x = 0
+
+let Monday = ['Жим гантелей лежа', 'жим лежа на наклонной скамье ', 'отжимание от брусьев', 'французский жим штанги лежа'];
+let Wednesday = ['Подтягивание на турнике', 'тяга горизонтального блока к поясу сидя', 'тяги гантели одной рукой в наклоне', 'сгибание рук со штангой стоя']
+
+let Friday = ['жим ногами', 'разгибание ног', 'сгибание ног', 'армейский жим штанги стоя', 'подъем гантелей через стороны']
+
 let counter = 0;
 let nameDelete = 0;
 
-
-let Monday = ['Жим гантелей лежа', 'жим лежа на наклонной скамье', 'отжимание от брусьев', 'французский жим штанги лежа'];
-let Wednesday = ['Подтягивание на турнике', 'тяга горизонтального блока к поясу сидя', 'тяги гантели одной рукой в наклоне', 'сгибание рук со штангой стоя']
-let Friday = ['жим ногами', 'разгибание ног', 'сгибание ног', 'армейский жим штанги стоя', 'подъем гантелей через стороны']
 
 
 
@@ -22,25 +26,37 @@ plusBtn.addEventListener('click', function () {
 
 	//counter
 	counter += 1
-	num.textContent = counter;
+	number.textContent = counter;
 
 	//bcg change
 
-	setTimeout(changeBackgroundPlus, 0);
-	setTimeout(changeBackgroundPlus, 250);
+	setTimeout(() => {
+		plusBtn.classList.add('btn-js-plus_clicked')
+	}, 0)
+
+	setTimeout(() => {
+		plusBtn.classList.remove('btn-js-plus_clicked')
+	}, 600)
+
 
 
 })
 
-cancelBtn.addEventListener('click', function () {
 
+cancelBtn.addEventListener('click', function () {
 	//counter
 	counter = 0
-	num.textContent = counter;
+	number.textContent = counter;
 
 	//bcg change
-	setTimeout(changeBackgroundCancel, 0);
-	setTimeout(changeBackgroundCancel, 250)
+
+	setTimeout(() => {
+		cancelBtn.classList.add('btn-js-cancel_clicked')
+	}, 0)
+
+	setTimeout(() => {
+		cancelBtn.classList.remove('btn-js-cancel_clicked')
+	}, 600)
 
 })
 
