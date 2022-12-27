@@ -36,7 +36,7 @@ plusBtn.addEventListener('click', function () {
 
 	setTimeout(() => {
 		plusBtn.classList.remove('btn-js-plus_clicked')
-	}, 600)
+	}, 450)
 
 
 
@@ -56,7 +56,7 @@ cancelBtn.addEventListener('click', function () {
 
 	setTimeout(() => {
 		cancelBtn.classList.remove('btn-js-cancel_clicked')
-	}, 600)
+	}, 450)
 
 })
 
