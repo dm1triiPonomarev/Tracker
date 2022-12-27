@@ -32,7 +32,7 @@ body {
 	font-weight: 600;
 	text-decoration: none;
 	color: #fff;
-	opacity: .7;
+	opacity: .75;
 	transition: opacity .1s linear;
 }
 
@@ -114,7 +114,8 @@ body {
 	border: none;
 	width: 20vh;
 	height: 20vh;
-	transition: background .1s linear
+	transition: background .1s linear;
+	background-color: #cfd9df;
 }
 
 .btn-js-default {
@@ -136,6 +137,7 @@ body {
 	width: 20vh;
 	height: 20vh;
 	transition: background .1s linear;
+	background-color: #cfd9df;
 
 }
 
